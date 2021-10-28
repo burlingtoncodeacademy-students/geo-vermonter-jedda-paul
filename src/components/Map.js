@@ -1,8 +1,17 @@
-import { MapContainer, TileLayer, Polygon, Marker, Polyline } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Polygon,
+  Marker,
+  Polyline,
+} from "react-leaflet";
 import borderData from "../data/border";
 
 function Map(props) {
-  let vtOutline = borderData.geometry.coordinates[0].map(coords => [coords[1], coords[0]])
+  let vtOutline = borderData.geometry.coordinates[0].map((coords) => [
+    coords[1],
+    coords[0],
+  ]);
 
   return (
     <MapContainer
