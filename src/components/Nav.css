@@ -1,5 +1,4 @@
 .About-Modal {
-<<<<<<< HEAD
     position: fixed;
     left: 0;
     right: 0;
@@ -30,7 +29,7 @@
 }
 
 .About-Modal-header, .About-Modal-footer {
-    padding 10px;
+    padding: 10px;
 }
 
 .About-Modal-title {
@@ -75,57 +74,3 @@
     align-items: center;
     justify-content: center;
 } */
-=======
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.About-Modal-content {
-  width: 500px;
-  background-color: whitesmoke;
-}
-
-.About-Modal-header,
-.About-Modal-footer {
-  padding: 10px;
-}
-
-.About-Modal-title {
-  margin: 0;
-}
-
-.About-Modal-body {
-  padding: 10px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-
-/*  */
-.High-Score-Modal {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Rules-Modal {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
->>>>>>> 02c7b46e382821ad98456ee03a177b6866946c87

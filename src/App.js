@@ -13,26 +13,29 @@ export default function App() {
   const [center, setCenter] = useState([43.88, -72.7317]);
   const [show, setShow] = useState(false);
   const [disable, setDisable] = useState(false);
-  const [location, setLocation] = useState[0, 0];
+  const [location, setLocation] = useState([0, 0]);
 
   function randomLocation(evt) {
     
     let latMax = 45.005419;
     let latMin = 42.730315;
     let latRange = latMax - latMin + 1;
-    let latitude = Math.floor(Math.random(latRange));
+    let latitude = Math.random() * latRange;
     let longMax = -71.510225;
     let longMin = -73.35218;
     let longRange = longMax - longMin + 1;
-    let longitude = Math.floor(Math.random(longRange));
+    let longitude = Math.random() * longRange;
 
-    useState.setLocation = [longitude, latitude];
+    let location = [longitude, latitude];
     
-    leafletPip.pointInLayer(setLocation, geoJSON, [true])
-
-
-    
+    let layerArr = leafletPip.pointInLayer(location, geoJSON)
+    while (layerArr.length === 0) {
+      latitude = Math.random() * latRange
+      longitude = Math.random() * longRange
+      layerArr = leafletPip.pointInLayer([longitude, latitude], geoJSON)
+    } setLocation([latitude, longitude])
   }
+  console.log(location)
 
     return (
       <div>
