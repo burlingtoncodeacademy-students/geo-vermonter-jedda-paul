@@ -28,7 +28,7 @@ export default function App() {
 
     useState.setLocation = [longitude, latitude];
     
-    leafletPip.pointInLayer(props.setLocation, geoJSON, [true])
+    leafletPip.pointInLayer(setLocation, geoJSON, [true])
 
 
     
